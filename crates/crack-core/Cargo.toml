@@ -1,0 +1,24 @@
+[package]
+name = "crack-core"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+
+gimli = { workspace = true }
+capstone = { workspace = true }
+
+# Dependencies specific to Windows
+# TODO: add condition
+windows = { workspace = true, features = [
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_ProcessStatus",
+] }
+
+# Dependencies specific to macOS & Linux
+[target.'cfg(unix)'.dependencies]
+memmap = { workspace = true }
+nix = { workspace = true, features = ["ptrace"] }
+libproc = { workspace = true }
+libc = { workspace = true }
