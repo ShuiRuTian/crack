@@ -8,7 +8,17 @@ An interesting fact is usually a tool of some language is written by the languag
 
 And GDB/LLDB might not pritorize some tasks only for rust, but we could.
 
+Motivation or opportunity:
+http://nbaksalyar.github.io/2020/05/19/rust-debug.html
+https://blog.yoshuawuyts.com/rust-should-own-its-debugger-experience/
+
+Good features:
+https://werat.dev/blog/what-a-good-debugger-can-do/
+
 ## Resources
+(Paper)The State of Debugging in 2022:
+https://dl.acm.org/doi/10.1145/3563768.3570525
+
 go implments its own debugger for better understanding of language features
 
 Delve: https://github.com/go-delve/delve/tree/master
@@ -33,3 +43,13 @@ https://ebpf.io/what-is-ebpf/
 > Delve use this to provide better perforamnce for trace
 
 https://www.timdbg.com/posts/writing-a-debugger-from-scratch-part-1/
+
+x64/x32 debugger for windows: https://x64dbg.com/, the core is https://github.com/x64dbg/TitanEngine
+
+live++ https://liveplusplus.tech/index.html, the tech details: https://liveplusplus.tech/downloads/THQ_Nordic_Dev_Summit_2023_Live++_Behind_the_Scenes.pptx
+
+How replay.io
+https://medium.com/replay-io/recording-and-replaying-d6102afee273
+
+This lists very helpful resources for time-traveling debug
+https://github.com/airportyh/time-traveling-debugger
