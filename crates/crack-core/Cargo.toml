@@ -8,6 +8,7 @@ anyhow = { workspace = true }
 
 gimli = { workspace = true }
 capstone = { workspace = true }
+byteorder = { workspace = true }
 
 # Dependencies specific to Windows
 [target.'cfg(windows)'.dependencies]
