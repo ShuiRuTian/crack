@@ -6,6 +6,9 @@ edition = "2021"
 
 [workspace.dependencies]
 anyhow = "1.0.80"
+futures = "0.3"
+tokio = "1.36.0"
+tokio-util = "0.7"
 
 gimli = "0.28.1"    # DWARF support
 capstone = "0.12.0" # Disassembly support
